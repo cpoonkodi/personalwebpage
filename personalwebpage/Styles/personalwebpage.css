@@ -1,0 +1,231 @@
+body{
+  background: orange;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: green;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+
+/* mouse over link */
+nav a:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* selected link */
+nav a.active {
+  background: pink;
+  color: black;
+}
+
+.logo {
+  position: fixed;
+  margin: 15px 55px 15px 25px;
+}
+
+
+li{
+  display:inline-block;
+  margin-left: 80px;
+}
+
+nav {
+  margin-left: 110px;
+  padding-top: 35px;
+  padding-bottom: 25px;
+}
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #4caf50;
+  width: 0%;
+}
+
+.main{
+  padding: 16px;
+  margin-top: 130px;
+  height: 550px; /* Used in this example to enable scrolling */
+}
+
+#heading1{
+  font-style:normal;
+  font-size: 50px;
+  text-align: center;
+}
+/*sub heading color and size*/
+#subhead{
+  font-style:normal;
+  font-size: 20px;
+  font-family:sans-serif;
+  text-align: center;
+}
+
+#subhead1{
+  font-style:normal;
+  font-size: 20px;
+  font-family:sans-serif;
+  text-align: justify;
+}
+
+.myphoto {
+  margin: 15px 55px 15px 25px;
+}
+
+.homedetails {
+  padding-left: 150px;
+  padding-right: 150px;
+  display:flex;
+}
+
+fieldset{
+  margin-left: 250px;
+}
+input[type="text"], select,
+textarea{
+  border:1px solid #e0e0e0;
+  padding:8px;
+  width:250px;
+}
+
+textarea{
+  /*  padding:6px;*/
+  height:60px;
+  resize:none;
+}
+
+label{
+  width:100px;
+  display: inline-block;
+}
+
+select{
+  margin-left: 46px;
+}
+
+input[type="submit"], input[type="Reset"]{
+  margin-left: 60px;
+  padding: 8px;
+  background: #fece0c;
+  color:#332902;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor:pointer;
+}
+
+/*Footer*/
+/*footer color and alignment*/
+.footer {
+  padding: 2px;
+  text-align: center;
+  background: #ddd;
+  color : green;
+}
+
+/*button of footer size*/
+#button{
+  font-size: 20px;
+  padding: 20px 70px;
+}
+
+/*contact button's font size*/
+.size{
+  font-size: 35px;
+}
+/*footer end*/
+
+.mySlides {display: none}
+img {vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 55%;
+  width: auto;
+  padding: 15px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+.next {
+  margin-left: 561px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.favourite{
+  margin: 0 150px;
+  text-indent: 90px;
+  text-align:justify;
+  color : blue;
+  font-size: 25px;
+  font-style: oblique;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+td {
+  padding: 5px;
+  text-align: left;
+}

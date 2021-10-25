@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Wow Creators</title>
+  <meta name="description" content="Graphic Designer, Helsinki">
+  <meta name="keywords" content="Poonkodi, WoW, Creators, Graphic designer ">
+  <meta name="author" content="Poonkodi,WoW members">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="Styles/personalwebpage.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+  <div class="navbar">
+    <img class="logo" src="Images/wow.jpeg" alt="WoW Creators" class="logo">
+    <nav>
+      <ul>
+        <li data-li="home" class="active"> <a href="#home"> Home </a> </li>
+        <li data-li="skills"><a href="#skills"> Skills </a></li>
+        <li data-li="projects"> <a href="#projects"> Projects </a></li>
+        <li data-li="gallery"> <a href="#gallery"> Gallery </a></li>
+        <li data-li="goal"> <a href="#goal"> Goals </a></li>
+        <li data-li="contact"> <a href="#contact"> Contact </a></li>
+      </ul>
+    </nav>
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
+  <br><br><br><br><br><br><br><br>
+
+
+
+  <div class="item home">
+    <p id="heading1"> Hello, I'm Poonkodi Chenniappan</p>
+    <p id="subhead"><b> Web Developer </b> based in Helsinki.<br><br>
+      Welcome to my <b>portfolio!</b></p>
+      <div class="homedetails">
+        <img class="myphoto" src="Images/poo1.jpg" alt="WoW Creators" class="logo">
+        <p id="subhead1">I started my professional
+          career with one thing in mind, to let my work make the world a
+          more delightful place.<br><br>
+          <b>I can turn your feelings and ideas into design,</b> representing your brand in clever and memorable ways.
+          I take pride in professional designs, creative concepts and relationships with my clients.<br><br>
+          Although I started out in print, I have developed a <b>love
+            for building layouts and crafting stories for users.</b> Branding was<br> the next logical step.
+          </div>
+        </div>
+
+
+        <div class="item skills" style="display:none;">
+          <div class="homedetails">
+            <form id="skillform" onsubmit=" skilllist();return false">
+              <fieldset>
+                <legend>Skills</legend>
+                <p>
+                  <label>Enter your Skill : </label>
+                  <input type = "text" id = "yourskill" placeholder="skill" maxlength="25"> <span style="color:red" id="skillmsg"></span>
+                </p>
+                <p> <input type="submit" value="Add to List">
+                  <input type="reset" value="RESET" onclick="skillreset()"> </p>
+                  <p> List of Skills : </p>
+                  <select id="skillset" size="4">
+                  </select>
+                </fieldset>
+              </form>
+            </div>
+            <br><br>
+            <h2>My Skills : </h2>
+            <div class="homedetails">
+              <table style="width:75%">
+                <tr>
+
+                  <th colspan="2">WEB TECHNOLOGIES / PROGRAMMING LANGUAGES</th>
+                </tr>
+                <tr>
+<td><img class="myphoto" src="Images/html.png" alt="HTML logo" class="logo">HTML</td>
+<td><img class="myphoto" src="Images/csslogo.png" alt="CSS logo" class="logo">CSS</td>
+
+                </tr>
+                <tr>
+                  <td><img class="myphoto" src="Images/javascriptlogo.png" alt="Javascript logo" class="logo">Javascript</td>
+
+                  <td><img class="myphoto" src="Images/typescriptlogo.png" alt="TypeScript logo" class="logo">TypeScript</td>
+
+                </tr>
+                <tr>
+                  <td><img class="myphoto" src="Images/nodejslogo.png" alt="NodeJS logo" class="logo">NodeJS</td>
+                  <td><img class="myphoto" src="Images/sqllogo.png" alt="SQL logo" class="logo">SQL</td>
+
+                </tr>
+
+                <tr>
+                  <td><img class="myphoto" src="Images/itextlogo.png" alt="iText logo" class="logo">iText</td>
+                  <td><img class="myphoto" src="Images/reactjslogo.png" alt="ReactJS logo" class="logo">ReactJS</td>
+                </tr>
+
+              </table>
+            </div>
+            <h2> Download Resume :  </h2>
+            <select id="foption">
+              <option value="pdf">.pdf</option>
+              <option value="doc">.doc</option>
+            </select>
+            <input type="submit" value="Download" onclick="resumedownload()">
+          </div>
+
+
+          <div class="item projects" style="display:none;">
+            <div class="homedetails" id="color1" onmouseover="mouseOverp1()" onmouseout="mouseOutp1()">
+              <p id="subhead1"> <b>Project #1</b><br><br>
+                Client : Paypal<br>
+                Project: Seller Risk Pilot<br><br>
+                Description: The purpose of this project to reduce the risk associated with the seller.<br>
+                There are different types of Holds and Reserves available in the system to mitigate any
+                financial risk that may occur due to a Chargeback, Claim or Bank Reversal. It avoids
+                misusing of system and other problems with seller and buyer.<br><br>
+                <img class="myphoto" src="Images/seller-risk-pilot.jpg" alt="WoW Creators" class="logo">
+              </p></div>
+              <p align="center">Fig1.Screenshot of SRP </p>
+              <div class="homedetails">
+                <p id="subhead1"> <b>Project #2</b><br><br>
+                  Client	:	Australian	Football	League,	AU<br>
+                  Project	: Player	Movement	Report<br><br>
+                  Description:	Player	Movement	Reports	are	the	mechanism	that	AFL	uses	to	document
+                  and	track	each	individual	player’s	games	and	injuries.	<br>
+                  They	also	provide	an	information	source	for	reporting	on	player	injury	across	the	league.<br><br>
+                  <img class="myphoto" src="Images/ReportPlayer.jpeg" alt="WoW Creators" class="logo">
+                </p></div>
+                <p align="center"> Fig2.Screenshot of Report Player </p>
+                <div class="homedetails">
+                  <p id="subhead1"> <b>Project #3</b><br><br>
+                    Client	:	Australian	Football	League,	AU<br>
+                    Project	:	Sanctions<br><br>
+                    Description:	The	purpose	of	this	project	is	to	expedite	the	creation	and	distribution	of<br>
+                    sanctions	from	the	AFL	to	its	clubs	for	breaches	of	AFL regulations.<br><br>
+                    <img class="myphoto" src="Images/sanction.jpg" alt="WoW Creators" class="logo">
+                  </p></div>
+                  <p align="center"> Fig3.Screenshot of Report Sanctions </p>
+                </div>
+
+
+                <div class="item gallery" style="display:none;">
+                  <div class="slideshow-container">
+                    <div class="mySlides">
+                      <img src="Images/beach1.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                      <img src="Images/beach2.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                      <img src="Images/beach3.jpg" style="width:100%">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  </div>
+                  <br>
+                  <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                  </div>
+                  <p class="favourite">
+                    My favourite break out place is Sholinganallur beach.
+                    One day, My brother-in-law introduced this place. I found this place very relaxing.
+                    From that day onwards, We started going to that beach in the weekends often.
+                    This beach is not crowed too much like other beaches of Chennai city.<br><br>
+                    This beach is on the India’s ease coast, facing Bay of Bengal. It is part of the longest one beach in the world called, Marina beach.
+                    It is a great fun playing in sea water with family. Beach is cleaner compared to other beaches in Chennai.
+                    It is a good place to walk, jog, meditate, play.<br><br>
+                    It has stalls to have ice cream, tender coconut, Bajji, fish fry….
+                    Sometimes, you can get fish, crabs, shells etc., caught in sea and just brought to store.
+                    It is good to go there at 4pm and return at 5.30pm.
+                    Our home was just 10 kms from there and it was a quick and easy ride to go there.<br><br>
+                    My son enjoys very much there. Whenever any guests come from my native to our home, We take them there and they too enjoy well there.
+                    This place is my favourite and gives more pleasant memories.<br>
+                  </p><br>
+                </div>
+
+
+
+                <div class="item goal" style="display:none;">
+                  <h1 align="center"> Up Coming Goals</h1>
+                  <div class="homedetails">
+                    <img class="myphoto" src="Images/goals.png" alt="WoW Creators" class="logo">
+                    <ul id="subhead1">
+                      <li>Expanding our library of options for the foundational website section.</li><br><br>
+                      <li>Improving and potentially automating the process for handling accessible web design on our websites.</li><br><br>
+                      <li>Work towards getting one of our sites awarded / recognized.</li><br><br>
+                      <li>Staying up-to-date on any new development trends.</li><br><br>
+                      <li>Continuing to improve and document internal processes.</li><br><br>
+                    </ul>
+                  </div>
+                </div>
+
+
+                <div class="item contact" style="display:none;">
+                  <div class="homedetails">
+                    <form id="myform" onsubmit="validation(); return false">
+                      <fieldset>
+                        <legend>CONTACT ME</legend>
+                        <p>
+                          <label>First Name : </label>
+                          <input type = "text" id = "firstname" placeholder="firstname"> <span style="color:red" id="fmsg"></span>
+
+                        </p>
+                        <p>
+                          <label>Last Name : </label>
+                          <input type = "text" id = "lastname" placeholder="lastname"><span style="color:red" id="msg1"></span>
+                        </p>
+                        <p> Gender :
+                          <select id="gender">
+                            <option value="1">Gender</option>
+                            <option value="2">Male</option>
+                            <option value="3">Female</option>
+                          </select>
+                          <span style="color:red" id="msg2"></span>
+                        </p>
+                        <p>
+                          <label>Age : </label>
+                          <input type = "text" id = "age" placeholder="age"><span style="color:red" id="msg3"></span>
+                        </p>
+                        <p>
+                          <label>E-mail : </label>
+                          <input type = "text" id = "email" placeholder="Email"><span style="color:red" id="msg4"></span>
+                        </p>
+                        <p>
+                          <label>Website : </label>
+                          <input type = "text" id = "website" placeholder="website"><span style="color:red" id="msg5"></span>
+                        </p>
+                        <p>
+                          <label>Comment : </label>
+                          <textarea id = "message" placeholder="comment"></textarea><span style="color:red" id="msg6"></span>
+                        </p>
+                        <p> <input type="submit" value="SUBMIT">
+                          <input type="reset" onclick="resetform()" value="RESET"> </p>
+                        </fieldset>
+                      </form>
+                    </div>
+                    <div id="details" class="homedetails">
+                    </div>
+                    <br><br><br>
+                    <div class="footer">
+                      <p class="size"> Are you looking for an <br>
+                        experienced <b>web developer?</b><p>
+                          <button id="button" type="button" onmouseover="contact(this)" onmouseout="contact1()">Contact Me!</button>
+                          <p align="center"><font size="5">
+                            Street address: Köydenpunojankatu 8,<br>
+                            00180 Helsinki<br>
+                            Tel. +358 9 310 82102<br><br>
+                            <a href="https://www.facebook.com/profile.php?id=100009505692898" target="_blank"> Facebook</a>&nbsp&nbsp&nbsp&nbsp
+                            <a href="https://www.linkedin.com/in/poonkodi-chenniappan-7b5225a7" target="_blank"> LinkedIn</a><br></font>
+                          </p>
+                        </div> <!--Footer class closed-->
+                      </div>
+
+                      <p align="right" id="date"></p>
+                      <script src="JS/personalwebpage.js"> </script>
+
+                    </body>
+                    </html>
